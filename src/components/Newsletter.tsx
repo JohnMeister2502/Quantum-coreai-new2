@@ -42,6 +42,7 @@ const Newsletter: React.FC = () => {
               className="bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-xl p-8 border border-gray-700 shadow-xl"
             >
               <div className="mb-6">
+                
                 <label htmlFor="email" className="block text-white mb-2">Email Address</label>
                 <input
                   type="email"
