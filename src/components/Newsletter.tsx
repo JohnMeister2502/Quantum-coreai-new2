@@ -66,12 +66,38 @@ const Newsletter: React.FC = () => {
                 </label>
               </div>
               
-              <button 
-                type="submit"
-                className="w-full px-6 py-4 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40"
-              >
-                💥 Subscribe Now
-              </button>
+              <button
+  type="button"
+  onClick={async () => {
+    try {
+      const response = await fetch('https://hook.eu2.make.com/njr36bernx4rd81elu9bfx376ivjjmac', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          subscribed: true,
+          timestamp: new Date().toISOString(),
+          // You can add more custom fields here
+        }),
+      });
+
+      if (response.ok) {
+        alert('🎉 Successfully subscribed!');
+      } else {
+        alert('❌ Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('🚨 Network error. Check your connection and try again.');
+    }
+  }}
+  className="w-full px-6 py-4 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40"
+>
+  💥 Subscribe Now
+</button>
+
               
               <div className="mt-6 space-y-2">
                 <p className="text-green-400 flex items-start">

@@ -63,28 +63,7 @@ const WebDevelopment: React.FC<WebDevelopmentProps> = ({ isAnnual }) => {
         </div>
 
         <div className="mb-12">
-          <h3 className="text-xl text-white font-semibold mb-4">What's Included:</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-            <div className="flex items-center space-x-2">
-              <span className="text-green-400">✔️</span>
-              <span className="text-gray-300">Mobile + desktop responsive</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="text-green-400">✔️</span>
-              <span className="text-gray-300">WhatsApp integration</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="text-green-400">✔️</span>
-              <span className="text-gray-300">Booking/contact forms</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="text-green-400">✔️</span>
-              <span className="text-gray-300">Funnel-style design (optional)</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="text-green-400">✔️</span>
-              <span className="text-gray-300">Speed & SEO optimization</span>
-            </div>
           </div>
         </div>
 

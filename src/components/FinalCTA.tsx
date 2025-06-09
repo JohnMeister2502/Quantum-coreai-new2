@@ -21,13 +21,21 @@ const FinalCTA: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button className="px-10 py-5 rounded-lg bg-gradient-to-r from-red-500 to-orange-500 text-white font-bold text-xl hover:from-red-600 hover:to-orange-600 transition-all duration-300 shadow-lg shadow-red-500/30 hover:shadow-red-500/50 w-full sm:w-auto">
-              🔥 Start Now
-            </button>
-            
-            <button className="px-10 py-5 rounded-lg bg-white text-gray-900 font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-lg w-full sm:w-auto">
-              📞 Book a Call
-            </button>
+            <a href="#newsletter">
+              <button className="px-10 py-5 rounded-lg bg-gradient-to-r from-red-500 to-orange-500 text-white font-bold text-xl hover:from-red-600 hover:to-orange-600 transition-all duration-300 shadow-lg shadow-red-500/30 hover:shadow-red-500/50 w-full sm:w-auto">
+                🔥 Start Now
+              </button>
+            </a>        
+            <a
+  href="https://calendly.com/solutions-quantumcoreai/ai-automation-consultation"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="px-10 py-5 rounded-lg bg-white text-gray-900 font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-lg w-full sm:w-auto">
+    📞 Book a Call
+  </button>
+</a>
+
           </div>
         </div>
       </div>

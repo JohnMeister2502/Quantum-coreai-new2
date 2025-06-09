@@ -19,13 +19,13 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:support@quantumcore.co.za" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                  📧 support@quantumcore.co.za
+                <a href="mailto:info@quantum-coreai.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                  📧 info@quantum-coreai.com
                 </a>
               </li>
               <li>
-                <a href="tel:+27000000000" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                  ☎️ +27 21 000 0000
+                <a href="tel:+27791098810" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                  ☎️ +27 79 109 8810
                 </a>
               </li>
             </ul>
